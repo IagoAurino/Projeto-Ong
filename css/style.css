@@ -1,0 +1,964 @@
+/* ====================================================================
+   1. IMPORTAÇÃO DE FONTES E VARIÁVEIS GLOBAIS
+   ==================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Paleta de Cores */
+    --color-primary-base: #2e7d32;
+    --color-primary-dark: #1b5e20;
+    --color-primary-light: #a5d6a7;
+
+    --color-secondary-base: #ff9800;
+    --color-secondary-dark: #e65100;
+    --color-secondary-light: #ffe0b2;
+
+    --color-background-base: #ffffff;
+    --color-background-light: #f8f9fa;
+    --color-border-base: #e0e0e0;
+    --color-text-base: #333333;
+    --color-text-medium: #666666;
+
+    --color-action: #43a047;
+    --color-action-dark: #2e7d32;
+    --color-danger: #d32f2f;
+
+    /* Tipografia */
+    --font-family-base: 'Kanit', sans-serif;
+    --font-size-sm: 0.9rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.1rem;
+    --font-size-lg: 1.3rem;
+    --font-size-xl: 1.6rem;
+    --font-size-xxl: 2.2rem;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Espaçamento */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --spacing-3xl: 64px;
+
+    /* Bordas e Sombras */
+    --border-radius-sm: 6px;
+    --border-radius-base: 10px;
+    --shadow-base: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    /* Breakpoints */
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+
+
+/* ====================================================================
+   2 LAYOUT DA PÁGINA INICIAL (MODERNIZAÇÃO)
+==================================================================== */
+
+.hero-intro {
+    background: linear-gradient(to bottom, var(--color-background-base) 90%, var(--color-secondary-light));
+    padding: var(--spacing-xxl) 0 var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: var(--spacing-md) auto var(--spacing-xl) auto;
+    color: var(--color-secondary-dark);
+}
+
+.btn-hero-primary {
+    font-size: var(--font-size-lg) !important;
+    padding: var(--spacing-md) var(--spacing-3xl) !important;
+    transform: translateY(0);
+    box-shadow: none !important;
+}
+
+.btn-hero-primary:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modern-card {
+    max-width: 900px;
+    margin: var(--spacing-3xl) auto;
+    background-color: var(--color-background-base);
+    border-radius: 16px;
+    padding: var(--spacing-xxl);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.modern-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-address-card {
+    background-color: var(--color-secondary-light);
+    border-radius: var(--border-radius-base);
+    padding: var(--spacing-lg);
+    max-width: 400px;
+    margin: var(--spacing-md) auto var(--spacing-3xl) auto;
+    box-shadow: var(--shadow-base);
+}
+
+.mission-section h2,
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+}
+
+/* ====================================================================
+   2.1 DOAÇÃO (MODERNIZAÇÃO)
+==================================================================== */
+
+.doacao-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro-doacao h1 {
+    color: #008037;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro-doacao p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.form-doacao {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-doacao h2 {
+    color: #ff5e00;
+    margin-bottom: 20px;
+}
+
+.form-doacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-doacao input,
+.form-doacao select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.form-doacao button {
+    background-color: #008037;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.form-doacao button:hover {
+    background-color: #00a64f;
+}
+
+.agradecimento {
+    margin-top: 20px;
+    color: #444;
+}
+
+/* ====================================================================
+   2.2 NOSSA ONG (MODERNIZAÇÃO)
+==================================================================== */
+
+main {
+    max-width: 1100px;           
+    margin: 0 auto;              
+    padding: 60px 20px;          
+    text-align: center;          
+}
+
+/* Centraliza e dá espaçamento entre seções */
+main section {
+    margin-bottom: 60px;
+}
+
+/* Estilo do título principal */
+.about-hero h1 {
+    font-size: 2.4rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+}
+
+/* Texto introdutório */
+.intro-text {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+}
+
+/* Cards da missão, visão e valores */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.mv-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    max-width: 320px;
+    text-align: left;
+}
+
+.mv-card h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 15px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mv-card {
+        max-width: 90%;
+    }
+}
+
+
+/* ====================================================================
+   3. ESTILOS BASE
+   ==================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background-base);
+    color: var(--color-text-base);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-light);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-primary-base);
+    color: var(--color-background-base);
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-secondary-dark);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-bold);
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin: var(--spacing-3xl) 0 var(--spacing-lg) 0;
+    color: var(--color-primary-dark);
+}
+
+h2 {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-secondary-dark);
+    margin-top: var(--spacing-3xl);
+}
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+a {
+    color: var(--color-secondary-base);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-secondary-dark);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-secondary-dark);
+    color: var(--color-secondary-light);
+    padding: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+
+/* ====================================================================
+   4. TIPOGRAFIA, LISTAS E UTILITÁRIOS
+   ==================================================================== */
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+
+/* ====================================================================
+   5. ESTILOS DE NÚMEROS DE IMPACTO 
+   ==================================================================== */
+
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    padding: 30px 0;
+    background-color: var(--color-background-light, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.stat-number {
+    font-size: 3em;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-dark);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1.1em;
+    color: var(--color-text-medium);
+}
+
+
+/* ====================================================================
+   6. COMPONENTES: BOTÕES
+   ==================================================================== */
+
+.btn-acao {
+    background-color: #ff9800; /* Laranja vibrante */
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.btn-acao:hover {
+    background-color: #e68900;
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(255, 152, 0, 0.4);
+}
+
+.btn-acao:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 8px rgba(255, 152, 0, 0.3);
+}
+
+.btn-small {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+/* ====================================================================
+   6.1 INPUT DE DOAÇÃO
+==================================================================== */
+
+/* Input escondido por padrão (desktop) */
+.form-doacao .input-doacao {
+    display: none;
+}
+
+/* Input visível apenas em mobile */
+@media (max-width: 991px) {
+    .form-doacao .input-doacao {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+}
+
+/* Botão finalizar doação centralizado no mobile */
+
+@media (max-width: 991px) {
+    .btn-finalizar-doacao {
+        all: unset; 
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-bold);
+        background-color: var(--color-action);
+        color: var(--color-background-base);
+        border: none;
+        border-radius: var(--border-radius-base);
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s;
+    }
+
+    .btn-finalizar-doacao:hover {
+        background-color: var(--color-action-dark);
+        transform: translateY(-1px);
+    }
+}
+
+/* ====================================================================  
+    7. HEADER E NAVEGAÇÃO PRINCIPAL (DESKTOP E GERAL)
+    ==================================================================== */
+
+.main-header {
+    background-color: var(--color-primary-base);
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 16px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Esconde ícone e checkbox no desktop */
+#menu-toggle
+.menu-icon {
+    display: none;
+}
+
+/* --- 7.2 LOGO (Desktop) --- */
+.main-nav .logo-link {
+    display: flex;
+    align-items: center;
+    order: -2;
+}
+
+.main-nav .logo-link img.logo {
+    height: 115px !important;
+    max-width: 160px !important;
+    width: auto !important;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.main-nav .logo-link img.logo:hover {
+    transform: scale(1.05);
+}
+
+/* --- 7.3 LINKS DE NAVEGAÇÃO (Desktop) --- */
+.nav-links-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: static; 
+}
+
+.nav-list {
+    display: flex;
+    gap: var(--spacing-xxl);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: var(--color-background-base);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    padding: var(--spacing-xs) var(--spacing-md);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: var(--color-secondary-light);
+}
+
+/* ====================================================================  
+   8. RESPONSIVIDADE (MOBILE) 
+    ==================================================================== */
+
+@media (max-width: 991px) {
+    
+    .main-nav {
+        width: 100%;
+        padding: 12px 20px;
+        min-height: 85px;
+        z-index: 1000;
+        justify-content: space-between; 
+    }
+
+    /* CHECKBOX */
+    #menu-toggle {
+        display: none !important;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    /* BOTÃO HAMBÚRGUER */
+    .main-nav .menu-icon { 
+        all: unset;
+        display: flex !important; 
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px; 
+        height: 25px; 
+        cursor: pointer;
+        position: relative;
+        z-index: 1003; 
+        order: -1; 
+        align-self: center; 
+    }
+
+    .menu-icon span {
+        display: block;
+        height: 4px;
+        background: white; 
+        border-radius: 4px; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* --- ANIMAÇÃO DO 'X' --- */
+    .main-nav #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+        transform: translateY(10.5px) rotate(45deg);
+    }
+    .main-nav #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    .main-nav #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+        transform: translateY(-10.5px) rotate(-45deg);
+    }
+    
+    .btn-acao {
+        display: block; 
+        z-index: 1003; 
+        font-size: 14px;
+        padding: 8px 14px;
+        margin-left: 0; 
+        align-self: center;
+    }
+
+    .logo-link {
+        position: absolute; 
+        left: 50%;
+        top: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1002; 
+    }
+    
+    .main-nav .logo-link img.logo {
+        height: 117px !important; 
+        max-width: 150px !important; 
+        filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.25)); 
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .main-nav .logo-link img.logo:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.3)); 
+    }
+
+    /* MENU DROPDOWN */
+    .nav-links-center {
+        display: none !important;  
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--color-primary-dark);
+        text-align: center;
+        padding: 10px 0;
+        z-index: 999; 
+        flex-grow: 0; 
+        gap: 0; 
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-md);
+    }
+    
+    .nav-list a {
+        padding: 10px 0;
+        display: block;
+        color: var(--color-secondary-light);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .main-nav #menu-toggle:checked ~ .nav-links-center {
+        display: flex !important; 
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .main-nav .logo-link {
+        margin-right: var(--spacing-3xl);
+    }
+    .main-nav .logo-link img.logo {
+        
+        max-width: 160px !important;
+    }
+    .nav-links-center {
+        display: flex !important;
+    }
+}
+
+    img {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+    .image-overlay-wrapper,
+    figure {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image-overlay-wrapper img,
+    figure img {
+        margin: 0 auto;
+        width: 100%;
+        border-radius: var(--border-radius-base);
+    }
+
+/* ====================================================================
+   9. OVERLAY DE IMAGEM 
+   ==================================================================== */
+
+.image-overlay-wrapper { 
+    position: relative;
+    max-width: 600px;
+    margin: var(--spacing-md) auto; 
+}
+
+.image-overlay-wrapper .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px var(--spacing-md);
+    background-color: rgba(44, 62, 80, 0.8);
+    color: var(--color-background-base);
+    text-align: center;
+    border-radius: var(--border-radius-base);
+    font-size: var(--font-size-lg); 
+    font-weight: var(--font-weight-bold);
+}
+
+
+/* ====================================================================
+   10. ALERTS
+   ==================================================================== */
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-base);
+}
+
+.alert-success {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-base);
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+}
+
+
+/* ====================================================================
+   11. TAGS
+   ==================================================================== */
+
+.tag {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-base);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    margin: var(--spacing-xs);
+}
+
+.tag-primary {
+    background-color: var(--color-primary-base);
+    color: var(--color-background-base);
+}
+
+.tag-secondary {
+    background-color: var(--color-secondary-base);
+    color: var(--color-background-base);
+}
+
+.tag-danger {
+    background-color: var(--color-danger);
+    color: var(--color-background-base);
+}
+
+
+/* ====================================================================
+   12. TELA DE CADASTRO
+   ==================================================================== */
+   
+.page-content-wrapper {  
+    /* Layout */
+    margin: 0 auto; /* ESSENCIAL PARA CENTRALIZAR */
+    max-width: var(--breakpoint-lg);
+    text-align: center;
+
+    /* Box Model */
+    padding: var(--spacing-xxl) var(--spacing-xl); 
+}
+  
+.registration-card {
+    /* Box Model */
+    width: 100%;
+    max-width: 500px; /* largura menor */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--spacing-3xl);
+ 
+    /* Visual */
+    background-color: var(--color-background-base); 
+    border: 1px solid var(--color-border-base); 
+    border-radius: var(--border-radius-base); 
+    box-shadow: var(--shadow-base); 
+
+    /* Espaçamento interno */
+    padding: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.registration-form fieldset {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1fr; /* uma coluna para manter compacto */
+    gap: var(--spacing-md);
+
+    /* Visual & Box Model */
+    border: 1px solid var(--color-border-base);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.registration-form legend {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary-dark);
+    padding: 0 var(--spacing-sm);
+}
+    
+.form-row-group {
+    display: flex; 
+    flex-direction: column; 
+    gap: var(--spacing-md); 
+    margin-bottom: var(--spacing-xl); 
+} 
+
+.form-row-group > div {
+    flex: 1; 
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-base);
+    font-size: var(--font-size-sm);
+    text-align: left; 
+    width: 100%;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-border-base);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-base);
+    color: var(--color-text-base);
+    box-sizing: border-box; 
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+}
+    
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: var(--color-action); 
+    border-width: 2px; 
+    outline: none;
+}
+
+/* ====================================================================
+   BOTÕES DE AÇÃO NO FORMULÁRIO
+   ==================================================================== */
+
+.registration-form .btn-action {
+    display: block; 
+    padding: var(--spacing-md);
+    background-color: var(--color-action); 
+    color: var(--color-background-base);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%; 
+    margin-top: var(--spacing-md); 
+}
+
+.registration-form .btn-action:hover {
+    background-color: var(--color-action-dark);
+}
+
+.btn-finalizar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-primary-base);
+    color: var(--color-background-base);
+    padding: var(--spacing-md) var(--spacing-xxl);
+    border: none;
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto; 
+    margin: var(--spacing-lg) auto 0 auto;
+}
+
+.btn-finalizar:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-finalizar:active {
+    transform: scale(0.98);
+}
+
+/* ====================================================================
+   RESPONSIVIDADE
+   ==================================================================== */
+
+@media (max-width: var(--breakpoint-md)) {
+    .registration-card {
+        max-width: 90%;
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+
+    .registration-form fieldset {
+        grid-template-columns: 1fr; 
+    }
+    
+    .form-row-group {
+        flex-direction: column; 
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .btn-finalizar {
+        width: 100%;
+    }
+}
+
+/* ====================================================================  
+   ESCONDER MENU HAMBÚRGUER NO DESKTOP
+   ==================================================================== */
+@media (min-width: 992px) {
+    #menu-toggle,
+    .menu-icon {
+        display: none !important;
+    }
+}

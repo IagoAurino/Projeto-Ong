@@ -5,68 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patas Solidárias | Nossos Projetos de Resgate</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+<header class="main-header">
+  <nav class="main-nav">
+
+    <input type="checkbox" id="menu-toggle">
+    
+    <label for="menu-toggle" class="menu-icon"> 
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logotipo.png" alt="Logo Patas Solidárias" class="logo">
+    </a>
+    
+    <div class="nav-links-center">
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos Sociais</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="doacao.html">Quero Ajudar</a></li>
+        <li><a href="nossa.ong.html">Nossa ONG</a></li>
+      </ul>
+    </div>
+
+    <a href="doacao.html" class="btn-acao">Doe Agora</a>
+  </nav>
+</header>
+    
+<main class="page-content-wrapper">
+    <section class="hero-intro">
         <h1>Nossos Projetos e Iniciativas</h1>
+        
+        <p class="intro-text">Conheça as principais ações da Patas Solidárias para garantir o bem-estar animal na nossa comunidade.</p>
+    </section>
 
-        <p>Conheça as principais ações da Patas Solidárias para garantir o bem-estar animal na nossa comunidade.</p>
-
-        <section>
+    <section class="projects-container">
+        <div class="project-card modern-card">
             <h2>Projeto 1: Adoção Responsável</h2>
-            <p>Nosso programa essencial de reabilitação e busca por lares definitivos. Cerca de 80% dos nossos recursos são dedicados a este **projeto.**</p>
-             
-                <article>
-                    <h3>Negão: Do Resgate à Família Feliz</h3>
+            <p>Nosso programa essencial de reabilitação e busca por lares definitivos. Cerca de 80% dos nossos recursos são dedicados a este projeto.</p>
+            
+            <article class="success-story">
+                <h3>Negão: Do Resgate à Família Feliz</h3>
+                <figure>
+                    <img src="assets/images/Negão.jpg" alt="Cachorro Negão em seu lar" width="430" height="550">
+                    <figcaption>Negão, adotado ainda filhote, hoje é a alegria de sua família.</figcaption>
+                </figure> 
+                <p>Negão foi resgatado em uma situação de extrema vulnerabilidade... Hoje, ele é um cachorro saudável, brincalhão e o membro mais amado de sua nova família...</p>
+                <p><a href="cadastro.html">Cadastre-se para ajudar na causa!</a></p>
+            </article>
 
-                    <figure>
-                        <img src="assets/images/Negão.jpg" alt="Cachorro Negão em seu lar" width="300" height="400">
-                        <figcaption>Negão, adotado ainda filhote, hoje é a alegria de sua família.</figcaption>
-                    </figure>  
-                        
-                    <p>Negão foi resgatado em uma situação de extrema vulnerabilidade. Encontrado acorrentado, sofrendo com bicheiras e desnutrição, ele recebeu cuidados veterinários intensivos e passou por uma longa reabilitação física e emocional em nosso abrigo. Sua história é um símbolo da luta contra os maus-tratos. Hoje, ele é um cachorro saudável, brincalhão e o membro mais amado de sua nova família, provando que o amor transforma qualquer sofrimento.</p>
-                        
-                    <p>Adoção responsável: <a href="cadastro.html">Cadastre-se para ajudar na causa!</a></p>
-                </article>
-                 
-                <article>
-                    <h3>Nino: Um Pequeno Gato com uma Grande História</h3>
+            <article class="success-story">
+                <h3>Nino: Um Pequeno Gato com uma Grande História</h3>
+                <figure>
+                    <img src="assets/images/Nino.jpg" alt="Gato Nino em seu lar" width="430" height="550">
+                    <figcaption>Nino, o gatinho mais novo a ser adotado pela Patas Solidárias.</figcaption>
+                </figure>
+                <p>Nino chegou ao nosso abrigo com apenas semanas de vida... Ele foi adotado por uma família e hoje é o companheiro mais amado da casa.</p>
+                <p>Você pode mudar uma vida como a do Nino. <a href="cadastro.html">Cadastre-se para ajudar na causa!</a></p>
+            </article>
+        </div>
+    </section>
 
-                    <figure>
-                        <img src="assets/images/Nino.jpg" alt="Gato Nino em seu lar" width="300" height="400">
-                        <figcaption>Nino, o gatinho mais novo a ser adotado pela Patas Solidárias.</figcaption>
-                    </figure>
-
-                    <p>Nino chegou ao nosso abrigo com apenas semanas de vida, precisando de cuidados especiais. Foi alimentado por sonda e, com muito carinho da nossa equipe, se recuperou rapidamente. Ele foi adotado por uma família e hoje é o companheiro mais amado da casa.</p>
-
-                    <p>Você pode mudar uma vida como a do Nino. <a href="cadastro.html">Cadastre-se para ajudar na causa!</a></p>
-                </article>
-        </section>
-
-        <section>
-        <h2>Junte-se à Nossa Rede de Apoio Animal.</h2>
-
-        <p>Sua ajuda garante que possamos continuar a escrever histórias felizes como a do Negão e do Nino. Conheça as formas de apoio:</p>
-
-        <ul>
-            <li>Voluntariado: Ajude diretamente nos resgates e cuidados (Veja nosso <a href="cadastro.html"> Formulário de Cadastro</a>).</li>
+    <section class="call-to-action modern-card">
+        <h2>Junte-se à Nossa Rede de Apoio Animal</h2>
+        <p class="intro-text">Sua ajuda garante que possamos continuar a escrever histórias felizes como a do Negão e do Nino. Conheça as formas de apoio:</p>
+        
+        <ul class="lista-apoio"> 
+            <li>Voluntariado: Ajude diretamente nos resgates e cuidados (Veja nosso <a href="cadastro.html">Formulário de Cadastro</a>).</li>
             <li>Doações: Contribua com ração, medicamentos ou suporte financeiro.</li>
         </ul>
-        </section>
-    </main>
+    </section>
+</main>
     
-    <footer>
-        <p>&copy; 2025 Patas Solidárias. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Patas Solidárias. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
