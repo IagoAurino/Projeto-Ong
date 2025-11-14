@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Solidárias | Nossos Projetos de Resgate</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="main-header">
+  <nav class="main-nav">
+
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logotipo.png" alt="Logo Patas Solidárias" class="logo">
+    </a>
+    
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"> 
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="nav-links-center">
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos Sociais</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="doacao.html">Quero Ajudar</a></li>
+        <li><a href="nossa.ong.html">Nossa ONG</a></li>
+      </ul>
+    </div>
+
+    <a href="doacao.html" class="btn-acao">Doe Agora</a>
+  </nav>
+</header>
+
+<main class="doacao-container">
+    
+    <section class="intro-doacao">
+        <h1>Transforme vidas com sua doação ❤️</h1>
+        <p>Seu apoio nos ajuda a alimentar, cuidar e abrigar animais em situação de risco. Com apenas um gesto, você faz parte dessa mudança!</p>
+    </section>
+
+    <section class="form-doacao">
+        <h2>Faça sua contribuição</h2>
+
+<form action="#" method="post">
+        <input type="text" name="nome" placeholder="Seu nome completo" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+
+                <input type="number" name="valor" placeholder="Valor da doação (R$)" required min="1">
+
+                <input type="number" class="input-doacao" name="valor-mobile" placeholder="Digite o valor (R$)" min="1">
+
+                <select name="tipo-doacao" required>
+                    <option value="">Selecione o método de pagamento</option>
+                    <option value="pix">PIX</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+                
+                <button type="submit" class="btn-finalizar-doacao">Finalizar Doação</button>
+            </form>
+             
+            <p class="agradecimento">
+                Agradecemos por cada gesto de solidariedade. Juntos, damos voz e amor a quem não pode pedir ajuda. 
+            </p>
+       </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Patas Solidárias. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
