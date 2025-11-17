@@ -323,7 +323,7 @@ a:hover {
 
 footer {
     text-align: center;
-    background-color: var(--color-secondary-dark);
+    background-color: #be4800;
     color: var(--color-secondary-light);
     padding: var(--spacing-md);
     font-size: var(--font-size-sm);
