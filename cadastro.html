@@ -78,23 +78,23 @@
 
                 <div>
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone"
-                    pattern="^\(\d{2}\) \d{5}-\d{4}$"
+                    <input type="text" id="telefone" name="telefone"
                     placeholder="(00) 00000-0000"
-                    required maxlength="15">
+                    required>
+                    <div id="telefone-error" class="error-message"></div>
                 </div>
             </fieldset>
 
             <fieldset>
                <legend>Endereço</legend>
                <div>
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep"
-                pattern="^\d{5}-\d{3}$"
-                placeholder="00000-000"
-                required maxlength="9">
+                  <label for="cep">CEP:</label>
+                  <input type="text" id="cep" name="cep"
+                    placeholder="00000-000"
+                    required maxlength="9"> 
+                  <div id="cep-error" class="error-message"></div>
                </div>
-
+               
                <div>
                 <label for="endereco">Endereço (Rua/Avenida, Número):</label>
                 <input type="text" id="endereco" name="endereco" required>
