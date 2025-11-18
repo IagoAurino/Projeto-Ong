@@ -1,7 +1,73 @@
-# Plataforma ONG Patas Solidárias## Descrição do Projeto
+# 🐾 Patas Solidárias | Projeto Final Web
 
-Este é um projeto acadêmico desenvolvido para a disciplina de **[Nome da Sua Disciplina - ex: Desenvolvimento Web Frontend]** da **[Nome da Sua Instituição de Ensino - ex: Faculdade XYZ]**. O objetivo foi aplicar os fundamentos de HTML5 para construir a base estrutural de uma plataforma web para uma ONG fictícia, a "Patas Solidárias".## Requisitos Cumpridos
+Este projeto é uma aplicação web de uma ONG dedicada ao resgate e adoção de animais, desenvolvido para demonstrar proficiência em metodologias ágeis (GitFlow), acessibilidade (WCAG 2.1 AA) e otimização para produção.
 
-O projeto foi desenvolvido atendendo às seguintes especificações técnicas:- **Estrutura HTML5 Semântica:** Implementação de 3 páginas HTML (`index.html`, `projetos.html`, `cadastro.html`) com uso adequado de tags semânticas (header, nav, main, section, article, figure, footer, etc.).- **Hierarquia de Títulos:** Uso consistente de `<h1>`, `<h2>`, `<h3>` para organização do conteúdo.- **Imagens Otimizadas:** Inclusão de imagens (`.jpg`, `.webp`) otimizadas e com atributos `alt` para acessibilidade.- **Páginas Obrigatórias:**    - **`index.html`**: Página inicial com informações sobre a organização e contato.    - **`projetos.html`**: Detalhes sobre projetos sociais, com histórias de sucesso de adoção (Negão e Nino).    - **`cadastro.html`**: Formulário completo para voluntariado/doação.- **Formulário Complexo e Interativo:**    - Utilização de diversos tipos de `input` HTML5 (Nome Completo, E-mail, CPF, Telefone, Data de Nascimento, Endereço, CEP, Cidade, Estado).    - Validação nativa com atributos HTML5 (`required`, `pattern`, `minlength`, `maxlength`, `type`).    - Agrupamento lógico com `fieldset` e `legend`.    - Implementação de máscaras de input para CPF, telefone e CEP (via atributo `pattern` ou similar).- **Código Fonte Organizado:** Estrutura de pastas clara (`css/`, `assets/images/`).- **Arquivos HTML Validados:** Todas as páginas HTML foram validadas com sucesso no [W3C Validator](https://validator.w3.org/).## Como Visualizar o Projeto
+---
 
-Para visualizar o projeto, basta clonar este repositório e abrir os arquivos `index.html`, `projetos.html` ou `cadastro.html` diretamente em seu navegador.## Autor- **Nome:** Iago Barbosa Aurino de Lima - **GitHub:** [@IagoAurino](https://github.com/IagoAurino)
+## 🚀 Tecnologias e Funcionalidades
+
+### Tecnologias Utilizadas
+
+| Categoria | Componentes |
+| :--- | :--- |
+| **Front-end** | HTML5, CSS3 (Variáveis CSS), JavaScript (Módulos ES6) |
+| **Metodologia** | **GitFlow**, **Commits Semânticos**, Semantic Versioning (`v1.0.0`) |
+| **Otimização** | Minificação (HTML, CSS, JS), Compressão de Imagens |
+| **Serviço** | GitHub Pages (Simulação de Deploy) |
+
+### Principais Funcionalidades
+
+* **Single Page Application (SPA) Básico:** Navegação dinâmica entre páginas (Home, Cadastro, Projetos) sem recarregar o navegador, utilizando JavaScript puro (roteamento via hash).
+* **Validação de Formulário JS:** Verificação de consistência de dados (CPF, Telefone, E-mail, campos obrigatórios) antes do envio, com feedback visual ao usuário.
+* **Modo Escuro / Alto Contraste:** Funcionalidade de alternância de tema persistente via `localStorage`.
+
+---
+
+## ♿ Acessibilidade e Conformidade (WCAG 2.1 AA)
+
+O projeto foi rigorosamente revisado para atender o Nível AA das Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.1).
+
+* **Contraste Mínimo (4.5:1):** Todas as combinações de cores de texto (incluindo o `footer` e elementos da navegação) foram ajustadas para garantir contraste seguro.
+* **Navegação por Teclado:** Todos os links, botões e campos de formulário são totalmente acessíveis e navegáveis usando a tecla `Tab`. O indicador de foco (`:focus`) é visualmente claro.
+* **Suporte a Leitor de Tela:** Uso correto de tags semânticas (`<header>`, `<nav>`, `<main>`), atributos `alt` descritivos em todas as imagens e implementação de `aria-label`/`aria-expanded` em componentes dinâmicos (como o menu mobile).
+* **Design Inclusivo:** Implementação do sistema de **Modo Escuro** para legibilidade e versão de **Alto Contraste**.
+
+---
+
+## ⚙️ Controle de Versão e Estratégia Git
+
+A gestão do repositório seguiu padrões profissionais exigidos pela Atividade 4.
+
+### Histórico de Commits
+
+* **Padrão:** Utilização de **Commits Semânticos** (Ex: `feat:`, `fix:`, `style:`, `chore:`) para manter um histórico limpo e legível.
+* **Release:** A versão final do projeto está marcada com a tag **`v1.0.0`** (Versionamento Semântico).
+
+### Branching (GitFlow Simplificado)
+
+O desenvolvimento foi feito utilizando o fluxo de branches:
+
+1.  **`main`:** Código estável, pronto para produção.
+2.  **`develop`:** Branch de integração contínua das novas features.
+3.  **`feature/acessibilidade-wcag`:** Branch de trabalho para a implementação da Atividade 4.
+4.  **Pull Requests (PRs):** Utilizados para revisar e mesclar as branches de feature na `main`.
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+Para visualizar o projeto e testar a acessibilidade e o SPA:
+
+1.  **Clonar o Repositório:**
+    ```bash
+    git clone [Link do seu repositório GitHub]
+    ```
+2.  **Navegar para a Pasta:**
+    ```bash
+    cd [nome-do-seu-projeto]
+    ```
+3.  **Abrir:** Abra o arquivo `index.html` no seu navegador (use a extensão Live Server do VS Code, se disponível).
+
+---
+
+Ao finalizar este `README.md`, seu projeto está 100% completo e pronto para ser entregue através do **Pull Request final** no GitHub!
