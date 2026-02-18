@@ -1,7 +1,7 @@
 # Plataforma ONG Patas Solidárias 🐾
 
 ## Descrição do Projeto
-Este é um projeto acadêmico desenvolvido para a disciplina de **[Nome da Sua Disciplina - ex: Desenvolvimento Web Frontend]** da **[Nome da Sua Instituição de Ensino - ex: Faculdade XYZ]**. O objetivo foi aplicar os fundamentos de HTML5 para construir a base estrutural de uma plataforma web para uma ONG fictícia, a "Patas Solidárias".
+Este é um projeto acadêmico desenvolvido para a disciplina de **Desenvolvimento Front-end para web* da **Faculdade Unicid**. O objetivo foi aplicar os fundamentos de HTML5 para construir a base estrutural de uma plataforma web para uma ONG fictícia, a "Patas Solidárias".
 
 ## Requisitos Cumpridos
 O projeto foi desenvolvido atendendo às seguintes especificações técnicas:
